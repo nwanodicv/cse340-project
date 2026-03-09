@@ -157,6 +157,7 @@
   
       & a.btn {
         background-color:rgb(0, 191, 255);
+        opacity: 100%;
         color: #222;
         list-style: none;
         padding: 10px 20px;
@@ -168,5 +169,74 @@
     }
   }
   
+  /****** Main Content Styles ******/
+  #main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 20px;
+
+    & .delorean-container {
+
+      & h2 {
+        color: #222;
+        margin: 4rem 0;
+        
+      }
+      
+      & .upgrades-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 40px;
+
+        & .upgrade-item {
+          background-color:rgb(0, 191, 255);
+          height: 6rem;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          padding: 10px;
+          text-align: center;
+
+          & img {
+            height: auto;
+            border-radius: 5px;
+            align-items: center;
+          }
+
+          & h3 {
+            margin-top: 0;
+            color: blue;
+            text-decoration: underline;
+          }
+
+          & .flux-capacitor,
+          .bumper-stickers,
+          .hub-caps {
+            margin-top: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .reviews-container {
+
+    & h2 {
+      color: #222;
+      margin-top: 4rem;
+    }
+
+    & .review-item {
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+
+      & li {
+        margin: 2rem;
+        font-size: 1.2rem;
+        color: #222;
+      }
+    }
+  }
 
 }
