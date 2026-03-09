@@ -1,0 +1,71 @@
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 1170px;
+        height: auto;
+    }
+
+    /*************** HAMBURGER **************/
+    .hamburger {
+        display: none;
+    }
+    
+    /******* Navigation Styles ***************/
+    .nav-links {
+        display: block;
+
+        & .show {
+          display: flex;
+        }
+    
+        & ul {
+            display: flex;
+
+            & a {
+                margin: 0 4.5rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    /****** Main Style ******/
+    #hero {
+      & img {
+        width: 50%;
+        height: auto;
+        margin: 0 20rem;
+      }
+    
+      & .hero-content {
+        max-width: 600px;
+        position: absolute;
+        top: 75%;
+        left: 29%;
+        background-color: #fffcfc;
+        opacity: 50%;
+        font-weight: bold;
+        transform: translate(-50%, -50%);
+        color:rgb(0, 191, 255);
+    
+        & h2 {
+          font-size: 1.5em;
+          margin: 0;
+        }
+    
+        & .content-p {
+          font-size: 1.2em;
+          margin-top: 1px;
+        }
+    
+        & a.btn {
+          background-color:rgb(0, 191, 255);
+          color: #222;
+          list-style: none;
+          padding: 5px 20px;
+          text-decoration: none;
+          margin-top: 5rem;
+        }
+      }
+    }
+    
+    
+}
