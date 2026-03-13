@@ -1,5 +1,5 @@
 /* style for medium screens (tablets) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 38rem) {
     .container {
         width: 750px;
     }

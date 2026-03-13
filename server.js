@@ -25,7 +25,7 @@ app.set("layout", "./layouts/layout") // not at views root
 app.use(static)
 
 // Home route - This route renders the index.ejs file when the user visits the home page. It also passes a title variable to the template, which can be used to display the title of the page.
-app.get("/", (req, res) => {
+app.get("/index.ejs", (req, res) => {
   res.render("index", { title: "Home" })
 })
 
