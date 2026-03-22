@@ -92,7 +92,7 @@ VALUES
 ('GM', 'Hummer', 2008, 'large SUV with small interiors', '/images/hummer.jpg', '/images/hummer-tn.jpg', 26000, 50000, 'Black', 2),
 
 -- TRUCK (3)
-('Truck', 'monster-truck', 2015, 'Unique custom built vehicle', '/images/monster-truck.jpg', '/images/monster-truck-tn.jpg', 50000, 8000, 'Red', 5),
+('Truck', 'monster-truck', 2015, 'Unique custom built vehicle', '/images/monster-truck.jpg', '/images/monster-truck-tn.jpg', 50000, 8000, 'Red', 3),
 
 -- SEDAN (4)
 ('Toyota', 'Camry', 2021, 'Comfortable family sedan', '/images/camry.jpg', '/images/camry-tn.jpg', 28000, 10000, 'Silver', 4),

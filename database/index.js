@@ -14,14 +14,13 @@ const isProduction = process.env.NODE_ENV === "production"
  * If - else will make determination which to use
  * *************** */
 let pool //This code creates a local pool variable to hold the functionality of the "Pool" connection.
-if (process.env.NODE_ENV == "production") { //an if test to see if the code exists in a developent environment, as declared in the .env file. In the production environment, no value will be found.
+if (process.env.NODE_ENV == "development") { //an if test to see if the code exists in a developent environment, as declared in the .env file. In the production environment, no value will be found.
   pool = new Pool({ //This code creates a new pool instance from the imported Pool class.
     connectionString: process.env.DATABASE_URL, //This code indicates how the pool will connect to the database (use a connection string) and the value of the string is stored in a name - value pair, which is in the .env file locally, and in an "environment variable" on a remote server. These are equivelent concepts, but different implementations.
-    ssl: isProduction // This code indicates that the connection to the database will be secure, but only in a production environment. In a development environment, the connection will not be secure. The reason for this is that in a development environment, the database is likely to be running on the same machine as the application, so there is no need for a secure connection. In a production environment, the database is likely to be running on a different machine than the application, so a secure connection is necessary to protect the data being transmitted between the two machines.
-    ?{ // This Lines 13 through 15 - describes how the Secure Socket Layer (ssl) is used in the connection to the database, but only in a remote connection, as exists in our development environment.
+    ssl:
+    { // This Lines 13 through 15 - describes how the Secure Socket Layer (ssl) is used in the connection to the database, but only in a remote connection, as exists in our development environment.
       rejectUnauthorized: false,
     }
-      : false,
 }) //This ends the pool function started on line 11.
 
 // Added for troubleshooting queries
