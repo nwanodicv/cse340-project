@@ -1,5 +1,12 @@
 const { Pool } = require("pg") //This imports the "Pool" functionality from the "pg" package. A pool is a collection of connection objects (10 is the default number) that allow multiple site visitors to be interacting with the database at any given time. This keeps you from having to create a separate connection for each interaction.
 require("dotenv").config() //This imports the "dotenv" package which allows the sensitive information about the database location and connection credentials to be stored in a separate location and still be accessed.
+
+/* ***************
+ * Detect Environment
+ * *************** */
+const isProduction = process.env.NODE_ENV === "production" 
+// This checks if the app is running in production (Render)
+
 /* ***************
  * Connection Pool
  * SSL Object needed for local testing of app
