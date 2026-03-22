@@ -87,13 +87,12 @@ INSERT INTO inventory (
 VALUES
 -- SPORT (1)
 ('Chevy', 'Camaro', 2018, 'Sporty muscle car', '/images/camaro.jpg', '/images/camaro-tn.jpg', 35000, 15000, 'Black', 1),
-('Ford', 'Mustang', 2019, 'Iconic sport vehicle', '/images/mustang.jpg', '/images/mustang-tn.jpg', 37000, 12000, 'Blue', 1),
 
 -- SUV (2)
 ('GM', 'Hummer', 2008, 'large SUV with small interiors', '/images/hummer.jpg', '/images/hummer-tn.jpg', 26000, 50000, 'Black', 2),
 
 -- TRUCK (3)
-('Ford', 'F-150', 2020, 'Powerful and reliable truck', '/images/f150.jpg', '/images/f150-tn.jpg', 40000, 20000, 'White', 3),
+('Truck', 'monster-truck', 2015, 'Unique custom built vehicle', '/images/monster-truck.jpg', '/images/monster-truck-tn.jpg', 50000, 8000, 'Red', 5),
 
 -- SEDAN (4)
 ('Toyota', 'Camry', 2021, 'Comfortable family sedan', '/images/camry.jpg', '/images/camry-tn.jpg', 28000, 10000, 'Silver', 4),
@@ -115,7 +114,7 @@ VALUES
 ('Custom', 'mystery-van', 2015, 'Unique custom built vehicle', '/images/mystery-van.jpg', '/images/mystery-van-tn.jpg', 50000, 8000, 'Red', 5),
 ('Custom', 'no-image', 2015, 'Unique custom built vehicle', '/images/no-image.png', '/images/no-image-tn.png', 50000, 8000, 'Red', 5),
 ('Custom', 'survan', 2015, 'Unique custom built vehicle', '/images/survan.jpg', '/images/survan-tn.jpg', 50000, 8000, 'Red', 5),
-('Custom', 'wrangler', 2015, 'Unique custom built vehicle', '/images/wrangler.jpg', '/images/wrangler-tn.jpg', 50000, 8000, 'Red', 5),
+('Custom', 'wrangler', 2015, 'Unique custom built vehicle', '/images/wrangler.jpg', '/images/wrangler-tn.jpg', 50000, 8000, 'Red', 5);
 
 /* ====================================================
    6. ASSIGNMENT 2 QUERY #4
