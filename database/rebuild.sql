@@ -64,7 +64,7 @@ VALUES
 ('SUV'),
 ('Truck'),
 ('Sedan'),
-('Classic');
+('Custom');
 
 
 /* ===============================
@@ -85,10 +85,21 @@ INSERT INTO inventory (
   classification_id
 )
 VALUES
-('Chevy', 'Camaro', 2018, 'Sporty muscle car', '/images/camaro.jpg', '/images/camaro-tn.jpg', 35000, 15000, 'Red', 1),
+-- SPORT (1)
+('Chevy', 'Camaro', 2018, 'Sporty muscle car', '/images/camaro.jpg', '/images/camaro-tn.jpg', 35000, 15000, 'Black', 1),
 ('Ford', 'Mustang', 2019, 'Iconic sport vehicle', '/images/mustang.jpg', '/images/mustang-tn.jpg', 37000, 12000, 'Blue', 1),
-('GM', 'Hummer', 2008, 'large SUV with small interiors', '/images/hummer.jpg', '/images/hummer-tn.jpg', 26000, 50000, 'Black', 2);
 
+-- SUV (2)
+('GM', 'Hummer', 2008, 'large SUV with small interiors', '/images/hummer.jpg', '/images/hummer-tn.jpg', 26000, 50000, 'Black', 2),
+
+-- TRUCK (3)
+('Ford', 'F-150', 2020, 'Powerful and reliable truck', '/images/f150.jpg', '/images/f150-tn.jpg', 40000, 20000, 'White', 3),
+
+-- SEDAN (4)
+('Toyota', 'Camry', 2021, 'Comfortable family sedan', '/images/camry.jpg', '/images/camry-tn.jpg', 28000, 10000, 'Silver', 4),
+
+-- CUSTOM (5)
+('Custom', 'Hot Rod', 2015, 'Unique custom built vehicle', '/images/hotrod.jpg', '/images/hotrod-tn.jpg', 50000, 8000, 'Red', 5);
 
 /* ====================================================
    6. ASSIGNMENT 2 QUERY #4

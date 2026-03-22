@@ -230,3 +230,79 @@ h1 {
     }
   }
 }
+
+/* ****************************************
+ * Vehicle Detail Styling
+ **************************************** */
+
+.vehicle-detail {
+  padding: 20px;
+
+  .vehicle-detail-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+
+    .vehicle-image {
+      flex: 1;
+
+      img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 8px;
+      }
+    }
+
+    .vehicle-info {
+      flex: 1;
+
+      h2 {
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin: 8px 0;
+        line-height: 1.5;
+
+        strong {
+          color: #333;
+        }
+      }
+    }
+  }
+
+  .classification-view {
+    padding: 20px;
+
+  .classification-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+
+    .vehicle-card {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+      border-radius: 8px;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+
+        img {
+          width: 100%;
+          border-radius: 6px;
+        }
+
+        h3 {
+          margin: 10px 0;
+        }
+      }
+
+      p {
+        font-weight: bold;
+      }
+    }
+  }
+}
+}
