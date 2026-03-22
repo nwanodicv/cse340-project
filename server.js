@@ -77,8 +77,7 @@ app.use(async (err, req, res, next) => {
  * Values from .env (environment) file
  *************************/
 const port = process.env.PORT
-const host = process.env.HOST
-
+const host = process.env.HOST || "localhost"
 /* ***********************
  * Log statement to confirm server operation - The below code is our local server information and a log statement to confirm that the server is running. The server will be running on the port and host specified in the .env file.
  *************************/
