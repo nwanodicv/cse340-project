@@ -99,7 +99,23 @@ VALUES
 ('Toyota', 'Camry', 2021, 'Comfortable family sedan', '/images/camry.jpg', '/images/camry-tn.jpg', 28000, 10000, 'Silver', 4),
 
 -- CUSTOM (5)
-('Custom', 'Hot Rod', 2015, 'Unique custom built vehicle', '/images/hotrod.jpg', '/images/hotrod-tn.jpg', 50000, 8000, 'Red', 5);
+('Custom', 'adventador', 2015, 'Unique custom built vehicle', '/images/adventador.jpg', '/images/adventador-tn.jpg', 50000, 8000, 'Red', 5),
+('Custom', 'aerocar', 2015, 'Unique custom built vehicle', '/images/aerocar.jpg', '/images/aerocar-tn.jpg', 50000, 8000, 'Red', 5),
+('Custom', 'batmobile', 2015, 'Unique custom built vehicle', '/images/batmobile.jpg', '/images/batmobile-tn.jpg', 50000, 8000, 'Red', 5),
+('Custom', 'camaro', 2015, 'Unique custom built vehicle', '/images/camaro.jpg', '/images/camaro-tn.jpg', 50000, 8000, 'Red', 5),
+('Custom', 'crwn-vic', 2015, 'Unique custom built vehicle', '/images/crwn-vic.jpg', '/images/crwn-vic-tn.jpg', 50000, 8000, 'Red', 5),
+('Custom', 'delorean', 2015, 'Unique custom built vehicle', '/images/delorean.jpg', '/images/delorean-tn.jpg', 50000, 8000, 'Red', 5),
+('Custom', 'dog-car', 2015, 'Unique custom built vehicle', '/images/dog-car.jpg', '/images/dog-car-tn.jpg', 50000, 8000, 'Red', 5),
+('Custom', 'escalade', 2015, 'Unique custom built vehicle', '/images/escalade.jpg', '/images/escalade-tn.jpg', 50000, 8000, 'Red', 5),
+('Custom', 'fire-truck', 2015, 'Unique custom built vehicle', '/images/fire-truck.jpg', '/images/fire-truck-tn.jpg', 50000, 8000, 'Red', 5),
+('Custom', 'hummer', 2015, 'Unique custom built vehicle', '/images/hummer.jpg', '/images/hummer-tn.jpg', 50000, 8000, 'Red', 5),
+('Custom', 'mechanic', 2015, 'Unique custom built vehicle', '/images/mechanic.jpg', '/images/mechanic-tn.jpg', 50000, 8000, 'Red', 5),
+('Custom', 'model-t', 2015, 'Unique custom built vehicle', '/images/model-t.jpg', '/images/model-t-tn.jpg', 50000, 8000, 'Red', 5),
+('Custom', 'monster-truck', 2015, 'Unique custom built vehicle', '/images/monster-truck.jpg', '/images/monster-truck-tn.jpg', 50000, 8000, 'Red', 5),
+('Custom', 'mystery-van', 2015, 'Unique custom built vehicle', '/images/mystery-van.jpg', '/images/mystery-van-tn.jpg', 50000, 8000, 'Red', 5),
+('Custom', 'no-image', 2015, 'Unique custom built vehicle', '/images/no-image.png', '/images/no-image-tn.png', 50000, 8000, 'Red', 5),
+('Custom', 'survan', 2015, 'Unique custom built vehicle', '/images/survan.jpg', '/images/survan-tn.jpg', 50000, 8000, 'Red', 5),
+('Custom', 'wrangler', 2015, 'Unique custom built vehicle', '/images/wrangler.jpg', '/images/wrangler-tn.jpg', 50000, 8000, 'Red', 5),
 
 /* ====================================================
    6. ASSIGNMENT 2 QUERY #4
