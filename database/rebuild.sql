@@ -86,34 +86,42 @@ INSERT INTO inventory (
 )
 VALUES
 -- SPORT (1)
-('Chevy', 'Camaro', 2018, 'Sporty muscle car', '/images/camaro.jpg', '/images/camaro-tn.jpg', 35000, 15000, 'Black', 1),
+('Batmobile', 'Custom', 2015, 'Unique custom built vehicle', '/images/batmobile.jpg', '/images/batmobile-tn.jpg', 50000, 8000, 'Red', 1),
+('Survan', 'Custom', 2015, 'Unique custom built vehicle', '/images/survan.jpg', '/images/survan-tn.jpg', 50000, 8000, 'Red', 1),
+('Dog Car', 'Custom', 2015, 'Unique custom built vehicle', '/images/dog-car.jpg', '/images/dog-car-tn.jpg', 50000, 8000, 'Red', 1),
+('Aerocar', 'Custom', 2015, 'Unique custom built vehicle', '/images/aerocar.jpg', '/images/aerocar-tn.jpg', 50000, 8000, 'Red', 1),
+('Monster Truck', 'Custom', 2015, 'Unique custom built vehicle', '/images/monster-truck.jpg', '/images/monster-truck-tn.jpg', 50000, 8000, 'Red', 1),
+('Mystery Van', 'Custom', 2015, 'Unique custom built vehicle', '/images/mystery-van.jpg', '/images/mystery-van-tn.jpg', 50000, 8000, 'Red', 1),
 
 -- SUV (2)
-('GM', 'Hummer', 2008, 'large SUV with small interiors', '/images/hummer.jpg', '/images/hummer-tn.jpg', 26000, 50000, 'Black', 2),
+('Chevy', 'Camaro', 2018, 'Sporty muscle car', '/images/camaro.jpg', '/images/camaro-tn.jpg', 35000, 15000, 'Black', 2),
+('Lamborghini', 'Adventador', 2015, 'Unique custom built vehicle', '/images/adventador.jpg', '/images/adventador-tn.jpg', 50000, 8000, 'Red', 2),
 
 -- TRUCK (3)
-('Truck', 'monster-truck', 2015, 'Unique custom built vehicle', '/images/monster-truck.jpg', '/images/monster-truck-tn.jpg', 50000, 8000, 'Red', 3),
+('Jeep', 'Wrangler', 2015, 'Unique custom built vehicle', '/images/wrangler.jpg', '/images/wrangler-tn.jpg', 50000, 8000, 'Red', 3),
 
 -- SEDAN (4)
-('Toyota', 'Camry', 2021, 'Comfortable family sedan', '/images/camry.jpg', '/images/camry-tn.jpg', 28000, 10000, 'Silver', 4),
+('Custom', 'escalade', 2015, 'Unique custom built vehicle', '/images/escalade.jpg', '/images/escalade-tn.jpg', 50000, 8000, 'Red', 4),
+('Custom', 'fire-truck', 2015, 'Unique custom built vehicle', '/images/fire-truck.jpg', '/images/fire-truck-tn.jpg', 50000, 8000, 'Red', 4),
+('Custom', 'hummer', 2015, 'Unique custom built vehicle', '/images/hummer.jpg', '/images/hummer-tn.jpg', 50000, 8000, 'Red', 4),
 
 -- CUSTOM (5)
-('Custom', 'adventador', 2015, 'Unique custom built vehicle', '/images/adventador.jpg', '/images/adventador-tn.jpg', 50000, 8000, 'Red', 5),
-('Custom', 'aerocar', 2015, 'Unique custom built vehicle', '/images/aerocar.jpg', '/images/aerocar-tn.jpg', 50000, 8000, 'Red', 5),
-('Custom', 'batmobile', 2015, 'Unique custom built vehicle', '/images/batmobile.jpg', '/images/batmobile-tn.jpg', 50000, 8000, 'Red', 5),
-('Custom', 'camaro', 2015, 'Unique custom built vehicle', '/images/camaro.jpg', '/images/camaro-tn.jpg', 50000, 8000, 'Red', 5),
+('Custom', 'Adventador', 2015, 'Unique custom built vehicle', '/images/adventador.jpg', '/images/adventador-tn.jpg', 50000, 8000, 'Red', 5),
+('Aerocar', 'Custom', 2015, 'Unique custom built vehicle', '/images/aerocar.jpg', '/images/aerocar-tn.jpg', 50000, 8000, 'Red', 5),
+('Batmobile', 'Custom', 2015, 'Unique custom built vehicle', '/images/batmobile.jpg', '/images/batmobile-tn.jpg', 50000, 8000, 'Red', 5),
+('Custom', 'Camaro', 2015, 'Unique custom built vehicle', '/images/camaro.jpg', '/images/camaro-tn.jpg', 50000, 8000, 'Red', 5),
 ('Custom', 'crwn-vic', 2015, 'Unique custom built vehicle', '/images/crwn-vic.jpg', '/images/crwn-vic-tn.jpg', 50000, 8000, 'Red', 5),
 ('Custom', 'delorean', 2015, 'Unique custom built vehicle', '/images/delorean.jpg', '/images/delorean-tn.jpg', 50000, 8000, 'Red', 5),
-('Custom', 'dog-car', 2015, 'Unique custom built vehicle', '/images/dog-car.jpg', '/images/dog-car-tn.jpg', 50000, 8000, 'Red', 5),
+('Dog Car', 'Custom', 2015, 'Unique custom built vehicle', '/images/dog-car.jpg', '/images/dog-car-tn.jpg', 50000, 8000, 'Red', 5),
 ('Custom', 'escalade', 2015, 'Unique custom built vehicle', '/images/escalade.jpg', '/images/escalade-tn.jpg', 50000, 8000, 'Red', 5),
 ('Custom', 'fire-truck', 2015, 'Unique custom built vehicle', '/images/fire-truck.jpg', '/images/fire-truck-tn.jpg', 50000, 8000, 'Red', 5),
 ('Custom', 'hummer', 2015, 'Unique custom built vehicle', '/images/hummer.jpg', '/images/hummer-tn.jpg', 50000, 8000, 'Red', 5),
 ('Custom', 'mechanic', 2015, 'Unique custom built vehicle', '/images/mechanic.jpg', '/images/mechanic-tn.jpg', 50000, 8000, 'Red', 5),
 ('Custom', 'model-t', 2015, 'Unique custom built vehicle', '/images/model-t.jpg', '/images/model-t-tn.jpg', 50000, 8000, 'Red', 5),
-('Custom', 'monster-truck', 2015, 'Unique custom built vehicle', '/images/monster-truck.jpg', '/images/monster-truck-tn.jpg', 50000, 8000, 'Red', 5),
-('Custom', 'mystery-van', 2015, 'Unique custom built vehicle', '/images/mystery-van.jpg', '/images/mystery-van-tn.jpg', 50000, 8000, 'Red', 5),
+('Monster Truck', 'Custom', 2015, 'Unique custom built vehicle', '/images/monster-truck.jpg', '/images/monster-truck-tn.jpg', 50000, 8000, 'Red', 5),
+('Mystery Van', 'Custom', 2015, 'Unique custom built vehicle', '/images/mystery-van.jpg', '/images/mystery-van-tn.jpg', 50000, 8000, 'Red', 5),
 ('Custom', 'no-image', 2015, 'Unique custom built vehicle', '/images/no-image.png', '/images/no-image-tn.png', 50000, 8000, 'Red', 5),
-('Custom', 'survan', 2015, 'Unique custom built vehicle', '/images/survan.jpg', '/images/survan-tn.jpg', 50000, 8000, 'Red', 5),
+('Survan', 'Custom', 2015, 'Unique custom built vehicle', '/images/survan.jpg', '/images/survan-tn.jpg', 50000, 8000, 'Red', 5),
 ('Custom', 'wrangler', 2015, 'Unique custom built vehicle', '/images/wrangler.jpg', '/images/wrangler-tn.jpg', 50000, 8000, 'Red', 5);
 
 /* ====================================================

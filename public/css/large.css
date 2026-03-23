@@ -71,12 +71,21 @@
   /* Vehicle Detail Styles */
   .vehicle-detail {
     .vehicle-detail-container {
-      flex-direction: column;
+      flex-direction: row;
 
       .vehicle-image,
       .vehicle-info {
         width: 100%;
       }
+    }
+  }
+
+  .classification-view {
+
+    & .classification-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
     }
   }
 

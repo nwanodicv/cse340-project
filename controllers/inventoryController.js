@@ -28,7 +28,7 @@ invController.buildByInventoryId = async function (req, res, next) {
     const vehicleDetail = await utilities.buildVehicleDetail(data)
 
     // Render the view and pass data
-    res.render("inventory/detail", {
+    res.render("partials/inventory/detail", {
       title: `${data.inv_make} ${data.inv_model}`,
       nav,
       vehicleDetail
@@ -55,7 +55,7 @@ invController.buildByClassificationId = async function (req, res, next) {
     // Build HTML list (we’ll create this next)
     const inventoryList = await utilities.buildClassificationGrid(data)
 
-    res.render("inventory/classification", {
+    res.render("partials/inventory/classification", {
       title: "Vehicle Classification",
       nav,
       inventoryList
