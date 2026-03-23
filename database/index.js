@@ -14,14 +14,14 @@ const isProduction = process.env.NODE_ENV === "production"
  * If - else will make determination which to use
  * *************** */
 let pool //This code creates a local pool variable to hold the functionality of the "Pool" connection.
-if (process.env.NODE_ENV == "development") { //an if test to see if the code exists in a developent environment, as declared in the .env file. In the production environment, no value will be found.
+if (process.env.NODE_ENV == "production") { //an if test to see if the code exists in a developent environment, as declared in the .env file. In the production environment, no value will be found.
   pool = new Pool({ //This code creates a new pool instance from the imported Pool class.
     connectionString: process.env.DATABASE_URL, //This code indicates how the pool will connect to the database (use a connection string) and the value of the string is stored in a name - value pair, which is in the .env file locally, and in an "environment variable" on a remote server. These are equivelent concepts, but different implementations.
-    ssl: //isProduction // This code indicates that the connection to the database will be secure (ssl) if the app is running in production, but not in development. This is because the remote database requires a secure connection, but the local database does not. The ssl object is needed for local testing of the app, but will cause problems in the production environment if included there. The if - else structure makes the determination of which to use based on the environment.
-    /*?*/{ // This Lines 13 through 15 - describes how the Secure Socket Layer (ssl) is used in the connection to the database, but only in a remote connection, as exists in our development environment.
+    ssl: isProduction // This code indicates that the connection to the database will be secure (ssl) if the app is running in production, but not in development. This is because the remote database requires a secure connection, but the local database does not. The ssl object is needed for local testing of the app, but will cause problems in the production environment if included there. The if - else structure makes the determination of which to use based on the environment.
+    ?{ // This Lines 13 through 15 - describes how the Secure Socket Layer (ssl) is used in the connection to the database, but only in a remote connection, as exists in our development environment.
       rejectUnauthorized: false,
     }
-    //:false,
+    :false,
 }) //This ends the pool function started on line 11.
 
 // Added for troubleshooting queries
