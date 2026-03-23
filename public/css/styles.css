@@ -239,9 +239,10 @@ h1 {
   padding: 20px;
 
   .vehicle-detail-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 20px;
-    align-items: flex-start;
+    align-items: center;
 
     .vehicle-image {
       flex: 1;
@@ -278,6 +279,7 @@ h1 {
       display: grid;
       grid-template-columns: 1fr;
       gap: 20px;
+      
   
       & .vehicle-card {
         border: 1px solid #ddd;

@@ -1,62 +1,71 @@
 /* style for medium screens (tablets) */
 @media only screen and (min-width: 38rem) {
-    .container {
-        width: 750px;
-    }
+  .container {
+    width: 750px;
+  }
 
-    /******* Navigation Styles ***************/
-    .nav-links {
-        display: flex;
-
-        /*& .show {
-          display: block;
-        }*/
-    
-        & ul {
-            display: flex;
-
-            & a {
-                margin-left: 3.5rem;
-                font-size: 1.2rem;
-            }
-        }
-    }
-
-    
-    /****** Main Style ******/
-    #hero {
-      & img {
-        width: 50%;
-        height: auto;
+  /******* Navigation Styles ***************/
+  .nav-links {
+      display: flex;
+      /*& .show {
+        display: block;
+      }*/
+  
+      & ul {
+          display: flex;
+          & a {
+              margin-left: 3.5rem;
+              font-size: 1.2rem;
+          }
       }
-    
-        & .hero-content {
-            max-width: 600px;
-            position: absolute;
-            top: 60%;
-            left: 28%;
-            width: 12rem;
-            
-        
-            & h2 {
-              font-size: 1.5em;
-              margin: 0;
-            }
-        
-            & .content-p {
-              font-size: 1.2em;
-              margin-top: 1px;
-            }
-        }    
+  }
+  
+  /****** Main Style ******/
+  #hero {
+    & img {
+      width: 50%;
+      height: auto;
     }
+  
+    & .hero-content {
+        max-width: 600px;
+        position: absolute;
+        top: 60%;
+        left: 28%;
+        width: 12rem;
+        
+    
+        & h2 {
+          font-size: 1.5em;
+          margin: 0;
+        }
+    
+        & .content-p {
+          font-size: 1.2em;
+          margin-top: 1px;
+        }
+    }    
+  }
      
-    /** Vehicle Detail Styles **/
-    .classification-view {
-
-    & .classification-grid {
+  /** Vehicle Detail Styles **/
+  .vehicle-detail {
+    .vehicle-detail-container {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
+    grid-template-columns: 1fr 1fr;
+
+      .vehicle-image,
+      .vehicle-info {
+        width: 100%;
+      }
+    }
+  }
+
+  /* Classification View */
+  .classification-view {
+   & .classification-grid {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 20px;
     }
   }
 }

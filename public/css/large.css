@@ -71,7 +71,8 @@
   /* Vehicle Detail Styles */
   .vehicle-detail {
     .vehicle-detail-container {
-      flex-direction: row;
+      display: grid;
+    grid-template-columns: 1fr 1fr;
 
       .vehicle-image,
       .vehicle-info {
@@ -86,6 +87,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 20px;
+      align-items: center;
     }
   }
 
