@@ -25,6 +25,38 @@ router.get("/detail/:inv_id", invController.buildByInventoryId)
  ******************************************/
 router.get("/type/:classification_id", invController.buildByClassificationId)
 
+/* ******************************************
+ * Management View Route
+ * URL: /inv/
+ ******************************************/
+router.get("/", invController.buildManagement)
+
+/* ******************************************
+ * Deliver Add Classification View
+ ******************************************/
+router.get("/add-classification", invController.buildAddClassification)
+
+/* ******************************************
+ * Process Add Classification
+ ******************************************/
+router.post(
+  "/add-classification",
+  require("../utilities/").handleErrors(invController.addClassification)
+)
+
+/* ******************************************
+ * Deliver Add Inventory View
+ ******************************************/
+router.get("/add-inventory", invController.buildAddInventory)
+
+/* ******************************************
+ * Process Add Inventory
+ ******************************************/
+router.post(
+  "/add-inventory",
+  require("../utilities/").handleErrors(invController.addInventory)
+)
+
 
 // Export router
 module.exports = router

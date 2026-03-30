@@ -10,6 +10,8 @@ const expressLayouts = require("express-ejs-layouts")
 const env = require("dotenv").config()
 const app = express()
 const invRoute = require("./routes/inventoryRoute")
+const inventoryRoute = require("./routes/inventoryRoute")
+const accountRoute = require("./routes/accountRoute")
 const static = require("./routes/static")
 const baseController = require("./controllers/baseController")
 const utilities = require("./utilities/")
@@ -21,13 +23,18 @@ app.set("view engine", "ejs")
 app.use(expressLayouts)
 app.set("layout", "./layouts/layout") // not at views root
 
+app.use(express.urlencoded({ extended: true }))
+
 /* ***********************
  * Routes
  *************************/
-app.use(static)
+app.use(static)// This line tells the application to use the static route for any routes that start with "/static". This means that if a user visits "/static/css/styles.css", the application will use the static route to serve that file.
+app.use("/account", accountRoute)// This line tells the application to use the accountRoute for any routes that start with "/account". This means that if a user visits "/account/register", the application will use the accountRoute to handle that request. The accountRoute will then determine which controller function to call based on the specific route (e.g., "/register" or "/login").
 app.use("/inv", invRoute)
-
 // Home route - This route renders the index.ejs file when the user visits the home page. It also passes a title variable to the template, which can be used to display the title of the page.
+
+// 
+app.use("/inv", inventoryRoute)
 
 //app.get("/",(baseController.buildHome)
 app.get("/", utilities.handleErrors(baseController.buildHome))

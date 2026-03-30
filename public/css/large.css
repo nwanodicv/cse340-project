@@ -19,7 +19,7 @@
       & ul {
           display: flex;
           & a {
-              margin: 0 3.8rem;
+              margin: 0 2.8rem;
               font-size: 1.2rem;
           }
       }
@@ -90,5 +90,113 @@
       align-items: center;
     }
   }
+   
 
+  /* Account Form Styles */
+  fieldset {
+    background-color:#4eabe9;
+    padding: 20px;
+    width: 300px;
+    margin-left: 23rem;
+    border-radius: 8px;
+
+    & .account-form {
+      background-color: #4eabe9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 1px 1px 1px 2px #fff;
+      width: 300px;
+
+      & label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      & input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background-color: #fff;
+      }
+
+      & input::before {
+        content: "Please fill out this field.";
+        color: red;
+        display: none;
+      }
+
+      & input:required:invalid, & input:focus:invalid {
+        background-image: url(/images/invalid.png);
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-color: red;
+      }
+
+      & input:required:valid {
+        background-image: url(/images/valid.png);
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-color: green;
+      }
+
+      & #togglePassword {
+        background-color: black;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        margin: 5px 0;
+        cursor: pointer;
+      }
+
+      & button {
+        width: 100%;
+        padding: 10px;
+        background-color: rgb(0, 191, 255);
+        color: #222;
+        border: none;
+        border-radius: 4px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgb(0, 191, 255);
+          opacity: 90%;
+          color:#222
+        }
+      }
+    }
+  }
+  
+  /**** Management Styling *****/
+  .management-links {
+    margin-top: 20px;
+  
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+  
+    ul {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        margin-bottom: 10px;
+  
+        a {
+          text-decoration: none;
+          color: #0077cc;
+          font-weight: bold;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
 }
